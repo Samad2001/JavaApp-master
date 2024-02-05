@@ -33,8 +33,8 @@ public class Main {
                 Choose your process:
                 1. add Student
                 2. get All Student
-                3.get Teacher
-                4.get All Teacher""");
+                3. add Teacher
+                4. get All Teacher""");
 
         Scanner sc = new Scanner(System.in);
         int choice = sc.nextInt();
@@ -46,7 +46,7 @@ public class Main {
             case 2:
                 getAllStudents();
                 break;
-            case 3 ://TODO THIS PROBLEMS
+            case 3 :
                addTeacher();
                 break;
             case 4:
@@ -69,7 +69,7 @@ public class Main {
             System.out.println(student.toString());
         }
     }
-        //TODO ERROR bas verir onu hell et
+
         private static  void addTeacher(){
             AddTeacherRequest addTeacherRequest = RequestBuilderUtil.builAddTeacherRequest();
             teacherConTroller.addTeacher(addTeacherRequest);

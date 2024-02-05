@@ -1,13 +1,9 @@
 package org.example.entity;
-
-import org.example.entity.enums.Subject;
-
 import java.util.Objects;
 
 public class Student extends Human {
 
     private Long id;
-    Subject subject;
 
     public Long getId() {
         return id;
